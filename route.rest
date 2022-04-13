@@ -1,0 +1,24 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/62557e85e8d1f13e9fd95dd3
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "vivek",
+    "subscribedToChannel" : "web code"
+}
+
+###
+PATCH http://localhost:3000/subscribers/62557e85e8d1f13e9fd95dd3
+Content-Type: application/json
+
+{
+    "name" : "vivek"
+}
+
+###
+DELETE http://localhost:3000/subscribers/62557e85e8d1f13e9fd95dd3
